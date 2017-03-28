@@ -1,0 +1,19 @@
+{
+  "name": "type-script",
+  "version": "1.0.0",
+  "description": "tutorial basic",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngocthanhpham/type-script-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngocthanhpham/type-script-tutorial/issues"
+  },
+  "homepage": "https://github.com/ngocthanhpham/type-script-tutorial#readme"
+}
