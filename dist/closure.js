@@ -10,15 +10,23 @@ var result = fn_inside(5); // #=> 8
 console.log(result);
 var result1 = outside(3)(5); // #=> 8
 console.log(result1);
+
+
 function makeFunc() {
-    var name = 'Mozilla';
-    function displayName() {
-        var name = "Chrome";
+    let name = 'Mozilla';
+    function showName() {
         console.log(name);
+        displayName();
+        function displayName() {
+            console.log(name);
+            // /return name;
+        }
+        //console.log(name);
+        return displayName;
     }
-    //console.log(name);
-    return displayName;
+    return showName;
 }
-var myFunc = makeFunc();
+var myFunc = new makeFunc();
 myFunc();
+//myFunc.showName();
 //# sourceMappingURL=closure.js.map

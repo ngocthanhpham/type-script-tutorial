@@ -13,12 +13,16 @@ console.log(result1);
 
 function makeFunc() {
   var name = 'Mozilla';
-  function displayName() {
-    var name = "Chrome";
+  function showName() {
     console.log(name);
+    function displayName() {
+      console.log(name);
+    }
+    //console.log(name);
+    return displayName;
   }
-  //console.log(name);
-  return displayName;
+
+  return showName;
 }
 
 var myFunc = makeFunc();
